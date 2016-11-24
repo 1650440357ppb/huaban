@@ -132,7 +132,11 @@
                 var index=$(".menu").index(this);
                 $(".menulist").hide().eq(index).slideDown(100);
             })
-
+            $(".copy").click(function(){
+                var index=$(".menu").index(this);
+                $(".menulist").hide().eq(index).slideUp(100);
+            })
+            
              /*画图*/
             $(".menulist:eq(1) li").click(function(){
                 var fn=$(this).attr("data-role");
